@@ -118,5 +118,14 @@ Example: `<user-hash>/sweet-home/device/$heartbeat`
 }
 ```
 
+## Additional features
+
+- OTA updates
+- Device versioning
+- Device pairing
+- Analytics
+- etc
+
 ## Contact us
-To get more additional info, please, [contact us](https://2smart.com/business)
+
+[Contact us](https://2smart.com/business) to get an additional information or read our [blog](https://2smart.com/blog) to stay tuned with our new features!
