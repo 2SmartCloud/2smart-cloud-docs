@@ -1,6 +1,6 @@
 ## Notifications API
 
-To send notifications which will be displayed in mobile app should be used dedicated topic `<user-hash>/sweet-home/notifications/create` and published non-retain message with JSON string like this:
+To send notifications which will be displayed in mobile app should be used dedicated topic `<user-hash>/notifications/create` and published non-retain message with JSON string like this:
 
 ```JSON
 {
