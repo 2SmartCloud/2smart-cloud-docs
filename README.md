@@ -123,3 +123,4 @@ Example: `<user-hash>/sweet-home/<device-id>/$heartbeat`
 - [Firmware updates](Firmware_update.md)
 - [Device versioning](Device_versioning.md)
 - [Device pairing](Device_pairing.md)
+- [Value synchronization between devices](Value_sync_between_devices.md)
