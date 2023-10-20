@@ -11,3 +11,10 @@ There such requirements for pairing process:
         - `psk` - password for user`s AP
         - `wsp` - user`s email in system (for login in broker you need get SHA256 hash from this string and use it as login)
         - `token` - user`s password to connect to broker
+        - `host` - hostname of 2Smart Cloud to connect to
+        - `brport` - mqtt TCP port
+        - `rootTopic` - root topic of a device for mqtt broker
+        - `mqtts_port` - mqtt TLS port
+
+        Device should respond to this request with `200 OK` in case of no errors, `400 <message>` in case of validation error, `500 <message>` in case of internal error. This credential should be stored at device's filesystem for future communication with the platform.
+
