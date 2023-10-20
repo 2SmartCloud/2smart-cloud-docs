@@ -22,6 +22,8 @@ For products with custom firmware uploaded file should be binary which then is u
     }
     ```
 
+5. If device supports the staging mode (mode, when device can download the firmware version that still in development), it should use the endpoint: `https://cloud.2smart.com/firmwares/v1/staging/<product_id>.bin`. The staging mode doesn't require the version check (described above).
+
 ### EspHome firmware
 
 After publishing product based on EspHome firmware system automatically upload binary to same location from which it's available for devices: `https://cloud.2smart.com/firmwares/v1/<product_id>.bin`. Each time new version published binary is replaced with new one.

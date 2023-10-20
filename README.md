@@ -17,7 +17,7 @@ Device topic in 2Smart Cloud (under user root topic): `<user-hash>/sweet-home/<d
 4.  The node has a group of attributes `$options`, similar to the device. Example: `<user-hash>/sweet-home/<device-id>/node/$options/some-option`.
 5.  The node has a group of attributes `$telemetry`, similar to the device. Example: `<user-hash>/sweet-home/<device-id>/node/$telemetry/some-telemetry`.
 6.  A mechanism for validating the set values has been added to the application:
-    *  On the received message, in case of incorrect values, the error body should be sent to a topic like `errors/sweet-home/<device-id>/node...` The error body should be in the JSON format of the string "{" code ": 'error_code'," message ": 'error message'}". (For example, if an incorrect value has come to the topic `<user-hash>/sweet-home/<device-id>/node/sensor/set`, then the error should be sent to the topic `<user-hash>/errors/sweet-home/<device-id>/node/sensor`)
+    *  On the received message, in case of incorrect values, the error body should be sent to a topic like `errors/sweet-home/<device-id>/node...` The error body should be in the JSON format of the string `{"code": "ERROR_CODE", "message": "CUSTOM ERROR MESSAGE"}`. (For example, if an incorrect value has come to the topic `<user-hash>/sweet-home/<device-id>/node/sensor/set`, then the error should be sent to the topic `<user-hash>/errors/sweet-home/<device-id>/node/sensor`)
      *  Valid for any editable values (`$properties`,`$options`, `$telemetry`).
 
 7.  Device and node indicators are taken from the following attributes:
